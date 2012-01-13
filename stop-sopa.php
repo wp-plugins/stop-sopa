@@ -69,7 +69,7 @@ class stopsopa_class
 	font-size: 12px;
 	padding-left: 30px;
 	padding-right: 10px;
-	padding-top: 2px;
+	padding-top: 3px;
 }
 img.stop-sopa-foto {
 	margin: 10px 13px 10px 10px;
