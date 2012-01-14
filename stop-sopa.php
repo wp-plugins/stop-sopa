@@ -8,7 +8,7 @@ Author: Ivan Churakov
 Author URI: http://www.freelancer.com/affiliates/ichurakov/
 */
 wp_enqueue_script("jquery");
-define('PD_VERSION', 1.01);
+define('PD_VERSION', 1.02);
 
 class stopsopa_class
 {
