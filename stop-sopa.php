@@ -3,7 +3,7 @@
 Plugin Name: Stop SOPA
 Description: We are against of SOPA!
 Plugin URI: http://www.icprojects.net/stop-sopa.html
-Version: 1.01
+Version: 1.02
 Author: Ivan Churakov
 Author URI: http://www.freelancer.com/affiliates/ichurakov/
 */

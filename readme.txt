@@ -6,7 +6,7 @@ Donate link: http://www.icprojects.net/stop-sopa.htm
 Tags: SOPA, Anti SOPA, protest, blackout, blackout day, 18th January 2012
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 1.01
+Stable tag: 1.02
 
 SOPA breaks our internet freedom! We are against of SOPA!
 
@@ -36,6 +36,9 @@ None.
 
 == Changelog ==
 
+= 1.02 =
+* Minor bugs fixed
+
 = 1.01 =
 * Settings page created
 * Blackout Day option added
@@ -45,6 +48,9 @@ None.
 We are against of SOPA!
 
 == Upgrade Notice ==
+
+= 1.02 =
+As usually!
 
 = 1.01 =
 As usually!
