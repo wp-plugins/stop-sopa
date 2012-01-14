@@ -15,7 +15,8 @@ SOPA breaks our internet freedom! We are against of SOPA!
 The plugin adds small protest box to your website. By default it's collapsed, but once clicked, the box appears.
 On settings page you can specify either to displays protest box at the right bottom corner or at the middle right side.
 You also can turn on "Blackout Day" option. In this case website will show black screen like below and return 503 status (no problems with search engines) on 18th January 2012, 8:00AM - 8:00PM (server time):
-<a href="http://www.icprojects.net/stop-sopa.html"><img src="http://www.icprojects.net/wp-content/uploads/sopa-blackout.png" border="0" width="480"></a>
+<a href="http://www.icprojects.net/stop-sopa.html">[click link to see screenshot]</a>
+
 By placing this box on our WordPress websites we are protesting against of SOPA.
 
 You can see demo here: <a href="http://www.icprojects.net/stop-sopa.html">Stop SOPA!</a>
