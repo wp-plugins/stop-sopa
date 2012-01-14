@@ -17,7 +17,7 @@ The plugin adds small protest box to your website. By default it's collapsed, bu
 On settings page you can specify the position of the protest box: either at the right bottom corner or at the middle right side.
 You also can turn on "Blackout Day" option. In this case website will show black screen like below and return 503 status (no problems with search engines) on 18th January 2012, 8:00AM - 8:00PM (server time):
 
-<a href="http://www.icprojects.net/stop-sopa.html"><img src="http://www.icprojects.net/wp-content/uploads/sopa-blackout.png"></a>
+<a href="http://www.icprojects.net/stop-sopa.html">[Click this link to view screenshot]</a>
 
 By placing this box on our WordPress websites we are protesting against of SOPA.
 
