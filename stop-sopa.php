@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: Stop SOPA
-Description: We are against of SOPA!
+Description: SOPA breaks our internet freedom! Stop SOPA!
 Plugin URI: http://www.icprojects.net/stop-sopa.html
-Version: 1.03
+Version: 1.04
 Author: Ivan Churakov
 Author URI: http://www.freelancer.com/affiliates/ichurakov/
 */
 wp_enqueue_script("jquery");
-define('PD_VERSION', 1.03);
+define('PD_VERSION', 1.04);
 
 class stopsopa_class
 {
@@ -428,12 +428,12 @@ p.stop-sopa-text {
 <div class="stop-sopa-box">
 	<div class="stop-sopa-tab">STOP SOPA!</div>
 	<div class="stop-sopa-content">
-	<img class="stop-sopa-foto" src="'.get_bloginfo("wpurl").'/wp-content/plugins/'.basename(dirname(__FILE__)).'/stopsopa.png" height="90" alt="We are against of SOPA!">
+	<img class="stop-sopa-foto" src="'.get_bloginfo("wpurl").'/wp-content/plugins/'.basename(dirname(__FILE__)).'/stopsopa.png" height="90" alt="Stop SOPA!">
 	<p class="stop-sopa-quote">
 		SOPA breaks our internet freedom!<br />
-		Any site can be shut down whether or not we\'e done anything wrong.
+		Any site can be shut down whether or not we\'ve done anything wrong.
 	</p>
-	<p class="stop-sopa-text">We are against of SOPA!</p>
+	<p class="stop-sopa-text">Stop SOPA!</p>
 	</div>
 </div>
 ';
@@ -493,7 +493,7 @@ p.stop-sopa-text {
 	font-size: 13px;
 	text-align: left;
 	padding: 10px;
-	margin: 0px 3px 0px 0px;
+	margin: 0px 10px 0px 0px;
 	text-align: right;
 	line-height: 20px;
 }
@@ -535,12 +535,12 @@ p.stop-sopa-text {
 <div class="stop-sopa-box">
 	<div class="stop-sopa-content">
 		<div class="stop-sopa-tab">
-	<img class="stop-sopa-foto" src="'.get_bloginfo("wpurl").'/wp-content/plugins/'.basename(dirname(__FILE__)).'/stopsopa.png" height="90" alt="We are against of SOPA!">
+	<img class="stop-sopa-foto" src="'.get_bloginfo("wpurl").'/wp-content/plugins/'.basename(dirname(__FILE__)).'/stopsopa.png" height="90" alt="Stop SOPA!">
 	<p class="stop-sopa-quote">
 		SOPA breaks our internet freedom!<br />
-		Any site can be shut down whether or not we\'e done anything wrong.
+		Any site can be shut down whether or not we\'ve done anything wrong.
 	</p>
-	<p class="stop-sopa-text">We are against of SOPA!</p>
+	<p class="stop-sopa-text">Stop SOPA!</p>
 		</div>
 	</div>
 </div>
