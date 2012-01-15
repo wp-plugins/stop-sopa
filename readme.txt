@@ -8,7 +8,7 @@ Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: 1.04
 
-SOPA breaks our internet freedom! Stop SOPA!
+This plugin adds small protest box to your website and switch it to "Blackout Day" mode.
 
 == Description ==
 
