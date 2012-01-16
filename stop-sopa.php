@@ -3,12 +3,12 @@
 Plugin Name: Stop SOPA
 Description: SOPA breaks our internet freedom! Stop SOPA!
 Plugin URI: http://www.icprojects.net/stop-sopa.html
-Version: 1.04
+Version: 1.05
 Author: Ivan Churakov
 Author URI: http://www.freelancer.com/affiliates/ichurakov/
 */
 wp_enqueue_script("jquery");
-define('PD_VERSION', 1.04);
+define('PD_VERSION', 1.05);
 
 class stopsopa_class
 {
@@ -35,7 +35,7 @@ class stopsopa_class
 			"exists" => 1,
 			"version" => PD_VERSION,
 			"enable_blackout" => "on",
-			"protest_position" => "bottom-right"
+			"protest_position" => "middle-right"
 		);
 
 		if (!empty($_COOKIE["stopsopa_error"]))
