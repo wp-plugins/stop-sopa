@@ -3,12 +3,12 @@
 Plugin Name: Stop SOPA
 Description: Plugin adds small protest box to your website and switch it to "Blackout Day" mode.
 Plugin URI: http://www.icprojects.net/stop-sopa.html
-Version: 1.06
+Version: 1.07
 Author: Ivan Churakov
 Author URI: http://www.freelancer.com/affiliates/ichurakov/
 */
 wp_enqueue_script("jquery");
-define('PD_VERSION', 1.06);
+define('PD_VERSION', 1.07);
 
 class stopsopa_class
 {
@@ -249,6 +249,11 @@ class stopsopa_class
 			padding: 0px;
 			color: #CCC;
 		}
+		a {
+			font-weight: bold;
+			color: #CCC;
+			text-decoration: none;
+		}
 		h2 {
 			font-size: 24px;
 			text-align: center;
@@ -303,7 +308,7 @@ class stopsopa_class
 </head>
 <body>
 	<div class="sopa-box">
-		<h1>STOP SOPA!</h1>
+		<h1><a target="_blank" href="http://americancensorship.org/">STOP SOPA!</a></h1>
 		<h2>Blackout Day: 18th January 2012, 8:00AM - 8:00PM</h2>
 	</div>
 	<div id="countdown"></div>
@@ -384,6 +389,9 @@ p.stop-sopa-text {
 	text-align: right;
 	line-height: 20px;
 }
+a.stop-sopa-link {
+	text-decoration: none;
+}
 </style>
 <!--[if lt IE 7]>
 <style type="text/css">
@@ -422,7 +430,7 @@ p.stop-sopa-text {
 <div class="stop-sopa-box">
 	<div class="stop-sopa-tab">STOP SOPA!</div>
 	<div class="stop-sopa-content">
-	<img class="stop-sopa-foto" src="'.get_bloginfo("wpurl").'/wp-content/plugins/'.basename(dirname(__FILE__)).'/stopsopa.png" height="90" alt="Stop SOPA!">
+	<a class="stop-sopa-link" target="_blank" href="http://americancensorship.org/"><img class="stop-sopa-foto" src="'.get_bloginfo("wpurl").'/wp-content/plugins/'.basename(dirname(__FILE__)).'/stopsopa.png" height="90" alt="Stop SOPA!"></a>
 	<p class="stop-sopa-quote">
 		SOPA breaks our internet freedom!<br />
 		Any site can be shut down whether or not we\'ve done anything wrong.
@@ -491,6 +499,9 @@ p.stop-sopa-text {
 	text-align: right;
 	line-height: 20px;
 }
+a.stop-sopa-link {
+	text-decoration: none;
+}
 </style>
 <!--[if lt IE 7]>
 <style type="text/css">
@@ -529,7 +540,7 @@ p.stop-sopa-text {
 <div class="stop-sopa-box">
 	<div class="stop-sopa-content">
 		<div class="stop-sopa-tab">
-	<img class="stop-sopa-foto" src="'.get_bloginfo("wpurl").'/wp-content/plugins/'.basename(dirname(__FILE__)).'/stopsopa.png" height="90" alt="Stop SOPA!">
+	<a class="stop-sopa-link" target="_blank" href="http://americancensorship.org/"><img class="stop-sopa-foto" src="'.get_bloginfo("wpurl").'/wp-content/plugins/'.basename(dirname(__FILE__)).'/stopsopa.png" height="90" alt="Stop SOPA!"></a>
 	<p class="stop-sopa-quote">
 		SOPA breaks our internet freedom!<br />
 		Any site can be shut down whether or not we\'ve done anything wrong.
