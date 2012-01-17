@@ -6,9 +6,9 @@ Donate link: http://www.icprojects.net/stop-sopa.htm
 Tags: SOPA, protest, blackout
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 1.05
+Stable tag: 1.06
 
-This plugin adds small protest box to your website and switch it to "Blackout Day" mode.
+This plugin adds small protest box to your website and switch it to "Blackout Day" mode on 18th January 2012.
 
 == Description ==
 
@@ -36,6 +36,9 @@ None.
 
 == Changelog ==
 
+= 1.06 =
+* Source code optimized
+
 = 1.05 =
 * Typos fixed
 * Default settings changed
@@ -49,6 +52,9 @@ None.
 We are against of SOPA!
 
 == Upgrade Notice ==
+
+= 1.06 =
+As usually!
 
 = 1.05 =
 As usually!

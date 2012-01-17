@@ -1,20 +1,19 @@
 <?php
 /*
 Plugin Name: Stop SOPA
-Description: SOPA breaks our internet freedom! Stop SOPA!
+Description: Plugin adds small protest box to your website and switch it to "Blackout Day" mode.
 Plugin URI: http://www.icprojects.net/stop-sopa.html
-Version: 1.05
+Version: 1.06
 Author: Ivan Churakov
 Author URI: http://www.freelancer.com/affiliates/ichurakov/
 */
 wp_enqueue_script("jquery");
-define('PD_VERSION', 1.05);
+define('PD_VERSION', 1.06);
 
 class stopsopa_class
 {
 	var $options;
 	var $error;
-	var $info;
 	
 	var $exists;
 	var $version;
@@ -42,11 +41,6 @@ class stopsopa_class
 		{
 			$this->error = stripslashes($_COOKIE["stopsopa_error"]);
 			setcookie("stopsopa_error", "", time()+30, "/", ".".str_replace("www.", "", $_SERVER["SERVER_NAME"]));
-		}
-		if (!empty($_COOKIE["stopsopa_info"]))
-		{
-			$this->info = stripslashes($_COOKIE["stopsopa_info"]);
-			setcookie("stopsopa_info", "", time()+30, "/", ".".str_replace("www.", "", $_SERVER["SERVER_NAME"]));
 		}
 
 		$this->get_settings();
