@@ -3,12 +3,12 @@
 Plugin Name: Stop SOPA
 Description: Plugin adds small protest box to your website and switch it to "Blackout Day" mode.
 Plugin URI: http://www.icprojects.net/stop-sopa.html
-Version: 1.07
+Version: 1.08
 Author: Ivan Churakov
 Author URI: http://www.freelancer.com/affiliates/ichurakov/
 */
 wp_enqueue_script("jquery");
-define('PD_VERSION', 1.07);
+define('PD_VERSION', 1.08);
 
 class stopsopa_class
 {
@@ -379,7 +379,7 @@ p.stop-sopa-quote {
 	line-height: 20px;
 }
 p.stop-sopa-quote em {font-size: 13px;}
-p.stop-sopa-text {
+div.stop-sopa-text {
 	color: #CCC;
 	font-family: arial;
 	font-size: 13px;
@@ -419,7 +419,40 @@ a.stop-sopa-link {
 				}
 			});
 		});
-	});
+	});';
+		$begin = mktime(8, 0, 0, 1, 18, 2012);
+		$current_time = time();
+		if ($begin > $current_time && $this->enable_blackout == "on") {
+			echo '
+	var time_diff = '.($begin - $current_time).';
+	var now = new Date();
+	var end_time = parseInt(now.getTime()/1000) + time_diff;
+	function stopsopa_countdown() {
+		now = new Date();
+		current_time = parseInt(now.getTime()/1000);
+		time_diff = end_time - current_time;
+		if (time_diff < 0) {
+			location.reload();
+		} else {
+			hours = parseInt(Math.floor(time_diff/3600));
+			time_diff = time_diff - hours*3600;
+			minutes = parseInt(Math.floor(time_diff/60));
+			seconds = time_diff - minutes*60;
+			if (hours < 10) countdown_value = "0" + hours;
+			else countdown_value = hours;
+			countdown_value = countdown_value + ":";
+			if (minutes < 10) countdown_value = countdown_value + "0" + minutes;
+			else countdown_value = countdown_value + minutes;
+			countdown_value = countdown_value + ":";
+			if (seconds < 10) countdown_value = countdown_value + "0" + seconds;
+			else countdown_value = countdown_value + seconds;
+			document.getElementById("stop-sopa-countdown").innerHTML = "Stop SOPA! " + countdown_value;
+		}
+	}
+	self.setInterval("stopsopa_countdown()",1000);
+		';
+		}
+		echo '
 </script>
 ';
 	}
@@ -435,7 +468,7 @@ a.stop-sopa-link {
 		SOPA breaks our internet freedom!<br />
 		Any site can be shut down whether or not we\'ve done anything wrong.
 	</p>
-	<p class="stop-sopa-text">Stop SOPA!</p>
+	<div id="stop-sopa-countdown" class="stop-sopa-text">Stop SOPA!</div>
 	</div>
 </div>
 ';
@@ -489,7 +522,7 @@ p.stop-sopa-quote {
 	line-height: 20px;
 }
 p.stop-sopa-quote em {font-size: 13px;}
-p.stop-sopa-text {
+div.stop-sopa-text {
 	color: #CCC;
 	font-family: arial;
 	font-size: 13px;
@@ -529,7 +562,40 @@ a.stop-sopa-link {
 				}
 			});
 		});
-	});
+	});';
+		$begin = mktime(8, 0, 0, 1, 18, 2012);
+		$current_time = time();
+		if ($begin > $current_time && $this->enable_blackout == "on") {
+			echo '
+	var time_diff = '.($begin - $current_time).';
+	var now = new Date();
+	var end_time = parseInt(now.getTime()/1000) + time_diff;
+	function stopsopa_countdown() {
+		now = new Date();
+		current_time = parseInt(now.getTime()/1000);
+		time_diff = end_time - current_time;
+		if (time_diff < 0) {
+			location.reload();
+		} else {
+			hours = parseInt(Math.floor(time_diff/3600));
+			time_diff = time_diff - hours*3600;
+			minutes = parseInt(Math.floor(time_diff/60));
+			seconds = time_diff - minutes*60;
+			if (hours < 10) countdown_value = "0" + hours;
+			else countdown_value = hours;
+			countdown_value = countdown_value + ":";
+			if (minutes < 10) countdown_value = countdown_value + "0" + minutes;
+			else countdown_value = countdown_value + minutes;
+			countdown_value = countdown_value + ":";
+			if (seconds < 10) countdown_value = countdown_value + "0" + seconds;
+			else countdown_value = countdown_value + seconds;
+			document.getElementById("stop-sopa-countdown").innerHTML = "Stop SOPA! " + countdown_value;
+		}
+	}
+	self.setInterval("stopsopa_countdown()",1000);
+		';
+		}
+		echo '
 </script>
 ';
 	}
@@ -545,7 +611,7 @@ a.stop-sopa-link {
 		SOPA breaks our internet freedom!<br />
 		Any site can be shut down whether or not we\'ve done anything wrong.
 	</p>
-	<p class="stop-sopa-text">Stop SOPA!</p>
+	<div id="stop-sopa-countdown" class="stop-sopa-text">Stop SOPA!</div>
 		</div>
 	</div>
 </div>
