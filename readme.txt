@@ -2,11 +2,11 @@
 Contributors: ichurakov
 Plugin Name: Stop SOPA
 Author: Ivan Churakov
-Donate link: http://www.icprojects.net/stop-sopa.htm
+Donate link: http://www.icprojects.net/stop-sopa.html
 Tags: SOPA, protest, blackout
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 1.08
+Stable tag: 1.09
 
 This plugin adds small protest box to your website and switch it to "Blackout Day" mode on 18th January 2012.
 
@@ -15,7 +15,7 @@ This plugin adds small protest box to your website and switch it to "Blackout Da
 The plugin adds small protest box to your website. By default it's collapsed, but once clicked, the "Stop SOPA" box appears.
 
 On settings page you can specify the position of the protest box: either at the right bottom corner or at the middle right edge.
-You also can turn on/off "Blackout Day" option. In this case website will show black screen (click demo link below to view the screenshot) and return 503 status (no problems with search engines) on 18th January 2012, 8:00AM - 8:00PM (GMT).
+You also can turn on/off "Blackout Day" option. In this case website will show black screen (click demo link below to view the screenshot) and return 503 status (no problems with search engines) on 18th January 2012, 8:00AM - 8:00PM (server time).
 
 By placing this box on our WordPress websites we are protesting against of SOPA.
 
@@ -35,6 +35,9 @@ None.
 None.
 
 == Changelog ==
+
+= 1.09 =
+* Typos fixed
 
 = 1.08 =
 * Countdown added to protest box

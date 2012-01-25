@@ -3,12 +3,12 @@
 Plugin Name: Stop SOPA
 Description: Plugin adds small protest box to your website and switch it to "Blackout Day" mode.
 Plugin URI: http://www.icprojects.net/stop-sopa.html
-Version: 1.08
+Version: 1.09
 Author: Ivan Churakov
 Author URI: http://www.freelancer.com/affiliates/ichurakov/
 */
 wp_enqueue_script("jquery");
-define('PD_VERSION', 1.08);
+define('PD_VERSION', 1.09);
 
 class stopsopa_class
 {
@@ -313,6 +313,18 @@ class stopsopa_class
 	</div>
 	<div id="countdown"></div>
 	<div id="title">'.get_bloginfo('name').'</div>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-8505573-15"]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+    var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+    ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>	
 </body>
 </html>';
 			exit;
