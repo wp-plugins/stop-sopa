@@ -48,10 +48,6 @@ None.
 = 1.06 =
 * Source code optimized
 
-= 1.05 =
-* Typos fixed
-* Default settings changed
-
 = 1.01 =
 * Settings page created
 * Blackout Day option added
