@@ -19,7 +19,7 @@ You also can turn on/off "Blackout Day" option. In this case website will show b
 
 By placing this box on our WordPress websites we are protesting against of SOPA.
 
-You can see demo here: <a href="http://www.icprojects.net/stop-sopa.html">Stop SOPA!</a>
+You can see demo here: <a href="http://www.icprojects.net/stop-sopa.html">Stop SOPA</a>.
 
 == Installation ==
 
